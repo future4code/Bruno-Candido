@@ -1,0 +1,56 @@
+// Exercicios de interpretação de código
+// 1 Será impresso o valor 10/10/5
+// Será impresso o valor 10/10/10
+
+   let queHoras = prompt("Quantas horas você trabalha por dia?")
+   let valorDia = prompt("Quanto você recebe por dia?")
+   console.log (`Voce recebe ${queHoras/valorDia} por hora`)
+
+
+   //Exercícios de escrita de código
+
+   let nome
+   let idade
+
+   console.log(typeof nome)
+   console.log(typeof idade)
+   //Falta um valor a uma variável
+
+   let nomeQual = prompt ("Qual seu nome?")
+
+   let idadeQual = prompt ("Qual sua idade?")
+
+   console.log (typeof nomeQual)
+   console.log (typeof idadeQual)
+   console.log("olá", nomeQual, "você tem" ,idadeQual, "anos")
+   //Ambas retornaram como String
+
+   //Atividade 2
+
+   const torce = prompt ("voce torce para o cruzeiro?")
+   console.log (torce)
+   console.log("voce torce para o cruzeiro?, ",torce)
+
+   const pudim = prompt ("voce gosta de pudim?")
+   console.log (pudim)
+   console.log("voce gosta de pudim?, ",pudim)
+
+   const musica = prompt ("voce gosta de musica?")
+   console.log (musica)
+   console.log("voce gosta de musica?, ",musica)
+
+   //Atividade 3
+
+   let a = 10
+   let b = 25
+   let c = 0
+
+// Aqui faremos uma lógica para trocar os valores
+  c = a
+  a = b
+  b = c
+
+
+// Depois de trocados, teremos o seguinte resultado:
+console.log("O novo valor de a é", a) // O novo valor de a é 25
+console.log("O novo valor de b é", b) // O novo valor de b é 10
