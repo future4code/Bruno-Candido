@@ -1,56 +1,60 @@
-// Exercicios de interpretação de código
-// 1 Será impresso o valor 10/10/5
-// Será impresso o valor 10/10/10
+ const bool1 = true
+ const bool2 = false
+ const bool3 = !bool2
 
-   let queHoras = prompt("Quantas horas você trabalha por dia?")
-   let valorDia = prompt("Quanto você recebe por dia?")
-   console.log (`Voce recebe ${queHoras/valorDia} por hora`)
+ let resultado = bool1 && bool2
+ console.log("a. ", resultado)
 
+ resultado = bool1 && bool2 && bool3 
+ console.log("b. ", resultado) 
 
-   //Exercícios de escrita de código
+ resultado = !resultado && (bool1 || bool2) 
+ console.log("c. ", resultado)
 
-   let nome
-   let idade
+ console.log("d. ", typeof resultado)
 
-   console.log(typeof nome)
-   console.log(typeof idade)
-   //Falta um valor a uma variável
+// // false, false, true, booleano
 
-   let nomeQual = prompt ("Qual seu nome?")
+ let primeiroNumero = prompt("Digite um numero!")
+ let segundoNumero = prompt("Digite outro numero!")
 
-   let idadeQual = prompt ("Qual sua idade?")
+ const soma = primeiroNumero + segundoNumero
 
-   console.log (typeof nomeQual)
-   console.log (typeof idadeQual)
-   console.log("olá", nomeQual, "você tem" ,idadeQual, "anos")
-   //Ambas retornaram como String
+ console.log(soma)
 
-   //Atividade 2
+// codigo não faz a soma corretamente, pois não foi feito a declaração de valores.
 
-   const torce = prompt ("voce torce para o cruzeiro?")
-   console.log (torce)
-   console.log("voce torce para o cruzeiro?, ",torce)
+//1
+ let idade = prompt ("Qual sua idade?")
 
-   const pudim = prompt ("voce gosta de pudim?")
-   console.log (pudim)
-   console.log("voce gosta de pudim?, ",pudim)
+ console.log ( idade)
 
-   const musica = prompt ("voce gosta de musica?")
-   console.log (musica)
-   console.log("voce gosta de musica?, ",musica)
+ let idadeAmigo = prompt ("Idade melhor amigo")
+ console.log (idadeAmigo)
+ console.log("Sua idade é maior que a do seu amigo?", idade > idadeAmigo)
 
-   //Atividade 3
+ console.log ("Diferença de idade é de ", idade - idadeAmigo, "anos")
 
-   let a = 10
-   let b = 25
-   let c = 0
+//2
+ let usuario = Number( prompt ("Insira um numero par") )
+ console.log(usuario)
 
-// Aqui faremos uma lógica para trocar os valores
-  c = a
-  a = b
-  b = c
+ let restoDivisao = usuario % 2
+ console.log (restoDivisao)
 
+// 3
+ let meses = 12
+ let dias  = 365
+ let horas = 24
+ console.log (idade * meses)
+ console.log (idade * dias)
+ console.log (idade * dias * horas)
 
-// Depois de trocados, teremos o seguinte resultado:
-console.log("O novo valor de a é", a) // O novo valor de a é 25
-console.log("O novo valor de b é", b) // O novo valor de b é 10
+// 4
+const primeiroNumero = Number (prompt ("Informe o primeiro numero!"))
+const segundoNumero = Number (prompt ("Informe o segundo numero!"))
+
+console.log ("O primeiro numero é maior que segundo?", primeiroNumero > segundoNumero )
+console.log ("O primeiro numero é igual ao segundo?", primeiroNumero === segundoNumero)
+console.log ("O primeiro numero é divisivel pelo segundo?", primeiroNumero !== segundoNumero)
+console.log ("O segundo numero é divisivel pelo primeiro?", segundoNumero !== primeiroNumero)
