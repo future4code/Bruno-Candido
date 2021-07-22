@@ -1,0 +1,60 @@
+ const bool1 = true
+ const bool2 = false
+ const bool3 = !bool2
+
+ let resultado = bool1 && bool2
+ console.log("a. ", resultado)
+
+ resultado = bool1 && bool2 && bool3 
+ console.log("b. ", resultado) 
+
+ resultado = !resultado && (bool1 || bool2) 
+ console.log("c. ", resultado)
+
+ console.log("d. ", typeof resultado)
+
+// // false, false, true, booleano
+
+ let primeiroNumero = prompt("Digite um numero!")
+ let segundoNumero = prompt("Digite outro numero!")
+
+ const soma = primeiroNumero + segundoNumero
+
+ console.log(soma)
+
+// codigo não faz a soma corretamente, pois não foi feito a declaração de valores.
+
+//1
+ let idade = prompt ("Qual sua idade?")
+
+ console.log ( idade)
+
+ let idadeAmigo = prompt ("Idade melhor amigo")
+ console.log (idadeAmigo)
+ console.log("Sua idade é maior que a do seu amigo?", idade > idadeAmigo)
+
+ console.log ("Diferença de idade é de ", idade - idadeAmigo, "anos")
+
+//2
+ let usuario = Number( prompt ("Insira um numero par") )
+ console.log(usuario)
+
+ let restoDivisao = usuario % 2
+ console.log (restoDivisao)
+
+// 3
+ let meses = 12
+ let dias  = 365
+ let horas = 24
+ console.log (idade * meses)
+ console.log (idade * dias)
+ console.log (idade * dias * horas)
+
+// 4
+const primeiroNumero = Number (prompt ("Informe o primeiro numero!"))
+const segundoNumero = Number (prompt ("Informe o segundo numero!"))
+
+console.log ("O primeiro numero é maior que segundo?", primeiroNumero > segundoNumero )
+console.log ("O primeiro numero é igual ao segundo?", primeiroNumero === segundoNumero)
+console.log ("O primeiro numero é divisivel pelo segundo?", primeiroNumero !== segundoNumero)
+console.log ("O segundo numero é divisivel pelo primeiro?", segundoNumero !== primeiroNumero)
