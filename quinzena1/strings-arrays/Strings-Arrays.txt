@@ -1,0 +1,37 @@
+a: undefined b:null c:11 d:3 e:[3,19,5,6,7,8,9,10,11,12,13] f:9 // Essa eu colei na D e na F
+
+
+SUBI NUM ONIBUS EM MIRROCOS 27 letras
+
+
+const nomeDoUsuario = prompt('Informe seu nome')
+const emailDoUsuario = prompt('Informe seu email')
+const frase = " O e-mail " + emailDoUsuario + " foi cadastrado com sucesso.Seja bem-vinda(o) " + nomeDoUsuario 
+console.log (frase)
+
+
+
+let delicias = ["Morango","Brigadeiro","Chocolate","Pudim","Bombom",]
+console.log (delicias)
+console.log (`Essas são as minhas comidas preferidas:
+${delicias[0]}
+${delicias[1]}
+${delicias[2]}
+${delicias[3]}
+${delicias[4]}`)
+let usuario = prompt ("Qual sua comida favorita?")
+let novaLista = delicias.splice(1,1, usuario)
+console.log(`A lista atualizada fica ${delicias}`)
+
+const listaDeTarefas = []
+const tarefas1 = prompt ("Digite uma tarefa")
+const tarefas2 = prompt ("Digite uma segunda tarefa")
+const tarefas3 = prompt ("Digite uma terceira tarefa")
+
+ listaDeTarefas.push(tarefas1)
+ listaDeTarefas.push(tarefas2)
+ listaDeTarefas.push(tarefas3)
+console.log(listaDeTarefas)
+const tarefasConcluidas = prompt("Escolha somente um numero entre o 0, 1 e 2 para a tarefa ja realizada")
+const remover = listaDeTarefas.splice(1, tarefasConcluidas)
+console.log(`A lista atualizada fica ${listaDeTarefas}`)
