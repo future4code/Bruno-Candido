@@ -1,0 +1,161 @@
+// Exemplos
+
+// Exercício 0A
+function soma() {
+  // escreva seu código aqui
+  const num1 = prompt('Digite o primeiro número')
+  const num2 = prompt('Digite o segundo número')
+
+  console.log(Number(num1) + Number(num2))
+}
+
+// Exercício 0B
+function imprimeMensagem() {
+  // escreva seu código aqui
+  const mensagem = prompt('Digite sua mensagem')
+
+  console.log(mensagem)
+}
+
+// ---------------------------------------------------
+// Exercícios
+
+// Exercício 1
+function calculaAreaRetangulo() {
+  // escreva seu código aqui
+  const altura = prompt  ("3")
+  const largura = prompt ("5")
+  const resultado = altura * largura
+
+  console.log (resultado)
+
+
+} 
+
+// Exercício 2
+function imprimeIdade() {
+  // escreva seu código aqui
+
+  const anoAtual = prompt (2020) 
+  const anoNascimento = prompt (1990) 
+
+  const resultado = anoAtual - anoNascimento
+
+  console.log (resultado) 
+}
+
+
+// Exercício 3
+function calculaIMC() {
+  // escreva seu código aqui
+ const peso = prompt ("85")
+ const altura= prompt ("1.8")
+
+ IMC = peso / (altura * altura)
+
+ console.log (IMC)
+
+} 
+
+// Exercício 4
+function imprimeInformacoesUsuario() {
+  // escreva seu código aqui
+  let nome = prompt ("digite o seu nome:")
+  let idade = prompt ("Digite a sua idade:")
+  let email = prompt ("Digite seu endereco de email:")
+
+  console.log("Meu nome é " + nome + ", tenho " + idade + " anos, e o meu email é "+ email+".")
+  
+}
+
+// Exercício 5
+function imprimeTresCoresFavoritas() {
+  // escreva seu código aqui
+  let cores = [];
+  cores[0] = prompt("Qual sua cor favorita?")
+  cores[1] = prompt("Qual sua cor favorita?")
+  cores[2] = prompt("Qual sua cor favorita?")
+  console.log(cores);
+}
+
+// Exercício 6
+function retornaStringEmMaiuscula() {
+  // escreva seu código aqui
+  let text = prompt ('oi');
+// Maiúsculo
+  console.log(text.toUpperCase()); // HELLO WORLD
+}
+
+// Exercício 7
+function calculaIngressosEspetaculo() {
+  // escreva seu código aqui
+
+  const preco = prompt ('3000')
+  const valorIngresso = prompt ('100')
+
+  const resultado = preco / valorIngresso
+
+  console.log (resultado)
+} 
+
+// Exercício 8
+function checaStringsMesmoTamanho() {
+  // escreva seu código aqui
+  
+  const  string1 = prompt ("Digite uma palavra").length
+  const  string2 = prompt ("digite a palavra").length
+
+  const condicao = string1 === string2
+
+  console.log(condicao)
+ 
+} 
+
+
+// Exercício 9
+function checaIgualdadeDesconsiderandoCase() {
+  // escreva seu código aqui
+
+  let string1 = prompt ("Digite uma palavra").toUpperCase()
+  let string2 = prompt ("digite a palavra").toUpperCase()
+
+  console.log(string1 === string2)
+  
+}
+
+// Exercício 10
+function checaRenovacaoRG() {
+  // escreva seu código aqui
+  let anoAtual = Number (prompt("Qual o ano atual?"))
+  let anoDeNascimento = Number(prompt("Qual o ano de nascimento?"))
+  let anoDeEmissaoDeRg =Number(prompt("Qual o ano do Rg?"))
+
+  let renovacao20Anos = anoAtual - anoDeNascimento <= 20 && anoAtual - anoDeEmissaoDeRg >= 5
+  let renovacao50Anos = anoAtual - anoDeNascimento > 20 && anoAtual - anoDeNascimento <= 50 && anoAtual - anoDeEmissaoDeRg >= 10
+  let renovacao50AnosMais = anoAtual - anoDeNascimento > 50 && anoAtual - anoDeEmissaoDeRg >=15
+
+  console.log (renovacao20Anos || renovacao50Anos || renovacao50AnosMais) 
+
+}
+
+// Exercício 11
+function checaAnoBissexto() {
+  // escreva seu código aqui
+  const entradaAno = Number = prompt("Digite um ano para verificar se é ano bissexto")
+  const anoBissexto = entradaAno % 4 === 0 && entradaAno % 100 !== 0 || entradaAno % 400 === 0
+  
+  console.log(anoBissexto)
+
+} 
+
+// Exercício 12
+function checaValidadeInscricaoLabenu() {
+  // escreva seu código aqui
+  const idade =prompt ("você é maior de idade?")
+  const ensinoMedio = prompt ("você se formou no ensino medio")
+  const disponibilidadeDeHorario = prompt ("você tem disponibilidade de horário para as aulas?")
+
+  let maiorIdade = idade === "sim"
+  let medioCompleto = ensinoMedio === "sim"
+  let horarioLivre = disponibilidadeDeHorario === "sim"
+  console.log(maiorIdade === medioCompleto === horarioLivre)
