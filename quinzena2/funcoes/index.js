@@ -50,10 +50,10 @@
 //  console.log(`Eu sou ${nome}, tenho ${anos} anos, moro em ${cidade} e sou ${profissao}.`)
 
 // }
-// let nome = prompt("Informe seu nome")
-// let anos =Number(prompt("Informe sua idade"))
-// let cidade = prompt("Informe sua cidade")
-// let profissao = prompt("Informe sua profissao")
+// let nome = "Bruno"
+// let anos ="29"
+// let cidade = "Brasilia"
+// let profissao = "Desenvolvedor"
 // idadeAnosCidadeProfissao()
 
 //2
