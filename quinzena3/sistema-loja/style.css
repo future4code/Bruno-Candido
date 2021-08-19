@@ -1,0 +1,58 @@
+body{
+    color: rgb(14, 12, 12);
+    background-color: rgb(237, 236, 241);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1{ 
+    color: rgb(57, 11, 211);
+   font-size: 50px;
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 6px;
+}
+
+.imagem-destaque{
+    margin-top: 5px;
+    margin-bottom: 6px;
+    align-self: center;
+}
+
+h2 {
+    color: rgb(22, 106, 155);
+    font-size: 40 px;
+    text-align: center;
+}
+
+#texto.secundario{
+    display: block;
+    justify-content: flex-start
+
+}
+
+table, th, td  {
+    color: rgb(38, 179, 45);
+    margin: auto;
+    border: 1px solid black    
+}
+
+input{
+    color: rgb(128, 168, 76);
+    width: 70%;
+    align-content: center;
+    padding: 9px 9px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    position: relative;
+
+  }
+
+  label{
+    color: rgb(166, 175, 34);
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: large;
+    font-style: oblique;
+  }
