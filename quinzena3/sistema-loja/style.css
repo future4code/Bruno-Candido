@@ -1,15 +1,17 @@
 body{
-    color: rgb(12, 10, 10);
-    background-color: rgb(227, 235, 227);
+    color: rgb(14, 12, 12);
+    background-color: rgb(237, 236, 241);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-h1{ font-size: 50px;
-display: block;
-margin-top: 5px;
-margin-bottom: 6px;
+h1{ 
+    color: rgb(57, 11, 211);
+   font-size: 50px;
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 6px;
 }
 
 .imagem-destaque{
@@ -18,7 +20,9 @@ margin-bottom: 6px;
     align-self: center;
 }
 
-h2 {font-size: 40 px;
+h2 {
+    color: rgb(22, 106, 155);
+    font-size: 40 px;
     text-align: center;
 }
 
@@ -29,11 +33,13 @@ h2 {font-size: 40 px;
 }
 
 table, th, td  {
+    color: rgb(38, 179, 45);
     margin: auto;
     border: 1px solid black    
 }
 
 input{
+    color: rgb(128, 168, 76);
     width: 70%;
     align-content: center;
     padding: 9px 9px;
@@ -44,17 +50,9 @@ input{
   }
 
   label{
+    color: rgb(166, 175, 34);
     padding: 12px 12px 12px 0;
     display: inline-block;
     font-size: large;
     font-style: oblique;
   }
-  botton {
-    background:    #0000ff;
-border-radius: 1000px;
-padding:       20px 45px;
-color:         #ffffff;
-display:       inline-block;
-font:          normal bold 26px/1 "Roboto", sans-serif;
-text-align:    center;
-}
