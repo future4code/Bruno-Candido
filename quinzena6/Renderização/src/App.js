@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import styled from 'styled-components'
+import Etapa1 from './Components/Etapa1'
+import Etapa2 from './Components/Etapa2'
+import Etapa3 from './Components/Etapa3'
+import Final from './Components/Final'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Body = styled.div`
+width: 60vw;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+const BotaoEnviar = styled.button`
+margin-top: 16px;
+width: 10em;
+height: 2em;
+border-radius: 1em;
+border: 1px solid black;
+`
+
+class App extends React.Component  {
+  state = {
+    etapa: 1,
+  }
+  renderizarPagina = (valorEtapa) => {
+    switch(valorEtapa){
+      case 1:
+        return <Etapa1 />;
+      case 2:
+        return <Etapa2 />;
+      case 3:
+        return <Etapa3 />;
+      case 4:
+        return <Final />
+      default:
+        return <Etapa1 />
+    }
+  }
+  acrescentarEtapa = () => {
+    this.setState ({etapa: this.state.etapa + 1})
+  }
+  render(){
+    return (
+      <Body>
+        {this.renderizarPagina(this.state.etapa)}
+        <BotaoEnviar onClick = {() => this.acrescentarEtapa()}>PRÓXIMA ETAPA</BotaoEnviar>
+      </Body>
+    )
+  }
 }
 
 export default App;
