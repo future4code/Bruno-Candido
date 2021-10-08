@@ -1,28 +1,41 @@
 import React from "react"
-import axios from "axios"
 import styled from "styled-components"
 
+const Body = styled.div`
+text-align: center;
+
+`
 
 
 class createUser extends React.Component{
     state ={
-        createUser:[],
+        
     }
    
         
         render(){
-        const renderizarPagina=this.props.createUser.map((createUser)=>{
-            return <p>{createUser.nome}</p>;
+
+        const listUsuario = this.props.pegarUsuario.map((pegarUsuario)=>{
+            return <body>
+
+                <li key={pegarUsuario.id}>{pegarUsuario.name}</li>
+                <button onClick = {()=>this.props.deleteUsuario(pegarUsuario.id)}>Delete</button>
+            </body>;
         });
         return (
-        <div>
-          {renderizarPagina}
-          <button>Deletar</button>
-        </div>
+       
+            <Body>
+               <button onClick={this.props.renderizaInicio}> Mudar de Página</button>
+                <div>
+                      <h2>Usuário</h2>
+                      {listUsuario}
+
+                </div>
+            </Body>
         );
         
     }
   
 }
-
+export default createUser
 
