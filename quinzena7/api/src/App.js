@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import axios from "axios";
-import createUser from "./components/createUser";
+import CreateUser from "./components/CreateUser"
 
 const Body = styled.div`
 text-align: center;
@@ -89,7 +89,7 @@ text-align: center;
 
     if(this.state.pagina) {
       return (
-        <createUser 
+        <CreateUser 
         pegarUsuario={this.state.pegarUsuario}
         renderizaInicio={this.renderizaInicio}
         deleteUsuario={this.deleteUsuario}
