@@ -72,7 +72,22 @@ const Imputo = styled.input`
     }
 
 `
-
+const CardMusica = styled.div`
+  display: inline-block;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  width: 800px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to left, #0000ff, #F7E2FD, #0000ff);
+  height: 80px;
+  font-size: 15px;
+  color: black;
+  border-radius:15px;
+  
+  `
 
 
 class DetalharPlayList extends React.Component {
@@ -144,12 +159,12 @@ class DetalharPlayList extends React.Component {
 
     render() {
         const retornarMusica = this.state.listaDeMusica.map((musicas) => {
-            return (<div key={musicas.id}>
+            return (<CardMusica key={musicas.id}>
                 <p>{musicas.name}</p>
                 <p>{musicas.artist}</p>
                 <p><audio controls src={musicas.url} /></p>
 
-            </div>)
+            </CardMusica>)
         })
         return (
 
