@@ -7,25 +7,21 @@ text-align: center;
 `
 
 
-class createUser extends React.Component{
-    state ={
-        
-    }
-   
+class CreateUser extends React.Component{
         
         render(){
 
         const listUsuario = this.props.pegarUsuario.map((pegarUsuario)=>{
-            return <body>
+            return <div>
 
                 <li key={pegarUsuario.id}>{pegarUsuario.name}</li>
                 <button onClick = {()=>this.props.deleteUsuario(pegarUsuario.id)}>Delete</button>
-            </body>;
+            </div>;
         });
         return (
        
             <Body>
-               <button onClick={this.props.renderizaInicio}> Mudar de Página</button>
+               <button onClick={()=>this.props.renderizaInicio}> Mudar de Página</button>
                 <div>
                       <h2>Usuário</h2>
                       {listUsuario}
@@ -37,5 +33,5 @@ class createUser extends React.Component{
     }
   
 }
-export default createUser
+export default CreateUser
 
