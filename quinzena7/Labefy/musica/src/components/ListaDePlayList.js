@@ -4,19 +4,23 @@ import styled from "styled-components"
 import DetalharPlayList from "./DetalharPlayList"
 
 
-const CardUsuario = styled.div`
-  background-image: linear-gradient(to left, #F7E2FD, #1A52AE);
+const CardMusica = styled.div`
+  display: inline-block;
   display: flex;
-  width: 50%;
-  justify-content: space-between;
+  border: 0px solid black;
   align-items: center;
-  text-align: center;
-  border: 1px solid black;
-  padding: 12px;
+  width: 800px;
   margin-bottom: 20px;
-  flex-direction: left;
-  font-size: 35px;
- `
+  padding-left: 10px;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to left, #0000ff, #F7E2FD, #0000ff);
+  height: 80px;
+  font-size: 25px;
+  color: black; 
+  border-radius:15px;
+  
+ 
+  `
 const Topzera = styled.button`
     margin-left: 65px;
     border: 2px solid gray;
@@ -27,7 +31,7 @@ const Topzera = styled.button`
     width: 100px;
 `
 const Topone = styled.button`
-display:flex;
+    display:flex;
     margin: 15px;
     margin-top: 40px;
     padding: 15px;
@@ -41,6 +45,8 @@ display:flex;
     border: 0px solid gray;
     height: 35px;
     background-image: linear-gradient(to left, #F7E2FD, #0000ff);
+    
+ 
 
 `
 const Escrito = styled.h1`
@@ -64,12 +70,14 @@ background-image: url(https://elegirhoy.com/uploads/fichas-eventos-imagenes/musi
 background-repeat: no-repeat;
 position: relative ;
 background-position: center,center;
-height: 96vh;
-width: 95vw;
+height: 97vh;
+width: 98vw;
 padding: 5px;
 
 
+
 `
+
 
 
 
@@ -140,12 +148,12 @@ class ListaDePlayList extends React.Component {
     }
     const listaUsuarios = this.state.playList.map((playlist) => {
       return (
-        <CardUsuario key={playlist.id}>
+        <CardMusica key={playlist.id}>
           {playlist.name}
           <Topzera onClick={() => this.deletarUsuario(playlist.id)}> Deletar </Topzera>
           <Topzera onClick={() => this.renderizaPaginaDetalhe(playlist)}> Mostar Mais </Topzera>
 
-        </CardUsuario>)
+        </CardMusica>)
 
 
     })
