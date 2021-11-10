@@ -93,7 +93,7 @@ function AdminHomePage() {
     };
 
     const getTripsList = () => {
-        axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/ernesto-fauth-munoz/trips")
+        axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/bruno-luan-banu/trips")
             .then((response) => {
                 setTripsList(response.data.trips);
                 setLoading(false);

@@ -83,7 +83,7 @@ function ApplicationFormPage() {
     };
 
     const getTripsList = () => {
-        axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/ernesto-fauth-munoz/trips")
+        axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/bruno-luan-banu/trips")
             .then((response) => {
                 setTripsList(response.data.trips);
                 setLoading(false);
@@ -107,7 +107,7 @@ function ApplicationFormPage() {
             profession: form.profession,
             country: form.country,
         };
-        axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/ernesto-fauth-munoz/trips/${form.tripId}/apply`, body)
+        axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/bruno-luan-banu/trips/${form.tripId}/apply`, body)
             .then((response) => {
                 alert("Aplicação bem sucedida!");
                 cleanFields();
