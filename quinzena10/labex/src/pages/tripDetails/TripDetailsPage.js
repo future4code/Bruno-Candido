@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import PageTitle from '../components/PageTitle';
-import Button from '../components/Button';
-import Loading from '../components/Loading';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import PageTitle from '../../components/PageTitle';
+import Loading from '../../components/Loading';
 import styled from 'styled-components';
 import axios from 'axios';
 import { useHistory, useParams } from 'react-router-dom';
-import useProtectedPage from '../hooks/useProtectedPage';
+import useProtectedPage from '../../hooks/useProtectedPage';
 
 const TripDetailsPageMainContainer = styled.div`
     width: 100%;

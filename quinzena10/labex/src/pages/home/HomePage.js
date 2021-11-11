@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Button from '../components/Button';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
 const HomePageMainContainer = styled.div`
     width: 100%;

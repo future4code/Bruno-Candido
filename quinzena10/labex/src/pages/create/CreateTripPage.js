@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import PageTitle from '../components/PageTitle';
-import Button from '../components/Button';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import PageTitle from '../../components/PageTitle';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import useProtectedPage from '../hooks/useProtectedPage';
-import useForm from '../hooks/useForm';
+import useProtectedPage from '../../hooks/useProtectedPage';
+import useForm from '../../hooks/useForm';
 import axios from 'axios';
 
 const CreateTripPageMainContainer = styled.div`

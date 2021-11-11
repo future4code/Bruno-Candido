@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import PageTitle from '../components/PageTitle';
-import Button from '../components/Button';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import PageTitle from '../../components/PageTitle';
 import styled from 'styled-components';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import useForm from '../hooks/useForm';
+import useForm from '../../hooks/useForm';
 
 const LoginPageMainContainer = styled.div`
     width: 100%;

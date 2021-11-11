@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Button from '../components/Button';
-import PageTitle from '../components/PageTitle';
-import Loading from '../components/Loading';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import PageTitle from '../../components/PageTitle';
+import Loading from '../../components/Loading';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import useProtectedPage from '../hooks/useProtectedPage';
+import useProtectedPage from '../../hooks/useProtectedPage';
 import axios from 'axios';
-import trashCanIcon from '../img/trashcanicon.png';
+import trashCanIcon from '../../img/trashcanicon.png';
 
 const AdminHomePageMainContainer = styled.div`
     width: 100%;

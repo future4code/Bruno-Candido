@@ -1,10 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import PageTitle from '../components/PageTitle';
-import Button from '../components/Button';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import PageTitle from '../../components/PageTitle';
 import { useHistory } from 'react-router-dom';
+import styled from 'styled-components';
 
 const ErrorPageMainContainer = styled.div`
     width: 60vw;

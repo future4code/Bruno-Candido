@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import PageTitle from '../components/PageTitle';
-import Button from '../components/Button';
-import Loading from '../components/Loading';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Button from '../../components/Button';
+import PageTitle from '../../components/PageTitle';
+import Loading from '../../components/Loading';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import useForm from '../hooks/useForm';
+import useForm from '../../hooks/useForm';
 import axios from 'axios';
-import { countries } from "../constants/countries";
+import { countries } from "../../constants/countries";
 
 const ApplicationFormPageMainContainer = styled.div`
     width: 100%;
