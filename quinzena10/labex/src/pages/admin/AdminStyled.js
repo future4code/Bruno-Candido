@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const AdminHomePageMainContainer = styled.div`
+export const AdminHomePageMainContainer = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
@@ -10,7 +10,7 @@ const AdminHomePageMainContainer = styled.div`
     background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
 `;
 
-const AdminHomeContainer = styled.div`
+export const AdminHomeContainer = styled.div`
     width: 40%;
     height: 100%;
     display: flex;
@@ -19,13 +19,13 @@ const AdminHomeContainer = styled.div`
     align-items: center;
 `;
 
-const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div`
     width: 40%;
     display: flex;
     justify-content: space-around;
 `;
 
-const CardMainContainer = styled.div`
+export const CardMainContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,15 +41,13 @@ const CardMainContainer = styled.div`
     };
 `;
 
-const TripNameContainer = styled.div`
+export const TripNameContainer = styled.div`
     font-size: 18px;
     font-weight: bold;
 `;
 
-const TripDelete = styled.div`
-`;
 
-const TripDeleteIcon = styled.img`
+export const TripDeleteIcon = styled.img`
     width: 40px;
     height: auto;
     &:hover {
@@ -58,4 +56,7 @@ const TripDeleteIcon = styled.img`
     };
 `;
 
+export const TripDelete = styled.div`
+
+`;
 export default styled;

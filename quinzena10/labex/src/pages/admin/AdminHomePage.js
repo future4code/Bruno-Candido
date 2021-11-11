@@ -4,69 +4,12 @@ import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import PageTitle from '../../components/PageTitle';
 import Loading from '../../components/Loading';
-import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import useProtectedPage from '../../hooks/useProtectedPage';
 import axios from 'axios';
 import trashCanIcon from '../../img/trashcanicon.png';
+import { AdminHomePageMainContainer, AdminHomeContainer, ButtonContainer, CardMainContainer, TripNameContainer, TripDeleteIcon, TripDelete } from "./AdminStyled"
 
-const AdminHomePageMainContainer = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
-`;
-
-const AdminHomeContainer = styled.div`
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`;
-
-const ButtonContainer = styled.div`
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-`;
-
-const CardMainContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #00daff;
-    margin: 8px;
-    padding: 8px 16px;
-    width: 80%;
-    height: 100px;
-    border: 1px solid black;
-    &:hover {
-        cursor: default;
-        background-color: whitesmoke;
-    };
-`;
-
-const TripNameContainer = styled.div`
-    font-size: 18px;
-    font-weight: bold;
-`;
-
-const TripDelete = styled.div`
-`;
-
-const TripDeleteIcon = styled.img`
-    width: 40px;
-    height: auto;
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.2);
-    };
-`;
 
 function AdminHomePage() {
 

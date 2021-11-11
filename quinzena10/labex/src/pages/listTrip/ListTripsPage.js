@@ -4,86 +4,9 @@ import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import PageTitle from '../../components/PageTitle';
 import Loading from '../../components/Loading';
-import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
-
-const ListTripsPageMainContainer = styled.div`
-    /* height: 130vh;
-     width: 99vw; */
-     height: auto;
-     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
-`;
-
-const ListTripsContainer = styled.div`
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-`;
-const ListTripsContainer1 = styled.div`
-   color: #055aec;
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-
-`
-const ButtonContainer = styled.div`
-    width: 40%;
-    display: flex;
-    justify-content: space-evenly;
-`;
-
-const CardMainContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: transparent;
-    margin: 8px;
-    padding: 8px 16px;
-    border-radius: 15px;
-    width: 80%;
-
-`;
-
-const TitleContainer = styled.div`
-    display: flex;
-    font-size: 25px;
-    background-color: #50b5df;
-    padding: 6px 14px;
-    border-radius: 15px;
-    margin: 4px 0 8px 0;
-`;
-
-const TripNameContainer = styled.div`
-    display: flex;
-    font-size: 18px;
-    color: #fffa50;
-    font-weight: bold;
-`;
-
-const TripDescContainer = styled.div`
-    display: flex;
-    font-size: 15px;
-    color: #fffa50;
-    font-style: italic;
-`;
-
-const TripDurationAndDateContainer = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    margin: 12px 0 4px 0;
-    background-color: #50b5df;
-    border-radius: 15px;
-    padding: 4px 0;
-`;
+import { ListTripsPageMainContainer, ListTripsContainer, ListTripsContainer1, ButtonContainer, CardMainContainer, TitleContainer, TripNameContainer, TripDescContainer, TripDurationAndDateContainer } from './ListStyled';
 
 function ListTripsPage() {
 
