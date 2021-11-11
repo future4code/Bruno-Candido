@@ -7,7 +7,7 @@ const StyledButton = styled.button`
     align-items: center;
     width: 200px;
     height: 45px;
-    background-color: grey;
+    background-color: #00daff;
     color: whitesmoke;
     border: 1px solid black;
     font-size: 18px;

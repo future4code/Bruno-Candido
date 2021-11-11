@@ -9,25 +9,31 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 const ListTripsPageMainContainer = styled.div`
-    width: 99vw;
-    height: 150vh;
-    /* width: 60vw; */
+    /* height: 130vh;
+     width: 99vw; */
+     height: auto;
+     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-   
-   
-    background-image:url(https://image.winudf.com/v2/image1/Y29tLmJhY2tncm91bmRzLmFuZC53YWxscGFwZXJzLmZyZWUuc3BhY2Vfc2NyZWVuXzE4XzE1NzI1Mjk4MTdfMDU0/screen-18.jpg?fakeurl=1&type=.jpg)
+    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
 `;
 
 const ListTripsContainer = styled.div`
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-`;
 
+`;
+const ListTripsContainer1 = styled.div`
+   color: #055aec;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+
+`
 const ButtonContainer = styled.div`
     width: 40%;
     display: flex;
@@ -43,13 +49,13 @@ const CardMainContainer = styled.div`
     padding: 8px 16px;
     border-radius: 15px;
     width: 80%;
-    border-style:solid;
+
 `;
 
 const TitleContainer = styled.div`
     display: flex;
-    font-size: 26px;
-    background-color: whitesmoke;
+    font-size: 25px;
+    background-color: #50b5df;
     padding: 6px 14px;
     border-radius: 15px;
     margin: 4px 0 8px 0;
@@ -58,14 +64,14 @@ const TitleContainer = styled.div`
 const TripNameContainer = styled.div`
     display: flex;
     font-size: 18px;
-    color: whitesmoke;
+    color: #fffa50;
     font-weight: bold;
 `;
 
 const TripDescContainer = styled.div`
     display: flex;
     font-size: 15px;
-    color: whitesmoke;
+    color: #fffa50;
     font-style: italic;
 `;
 
@@ -74,7 +80,7 @@ const TripDurationAndDateContainer = styled.div`
     width: 100%;
     justify-content: space-evenly;
     margin: 12px 0 4px 0;
-    background-color: whitesmoke;
+    background-color: #50b5df;
     border-radius: 15px;
     padding: 4px 0;
 `;
@@ -125,7 +131,9 @@ function ListTripsPage() {
                     />
                 </ButtonContainer>
                 <ListTripsContainer>
-                    <PageTitle title="LISTA DE VIAGENS DISPONÍVEIS" />
+                    <ListTripsContainer1>
+                        <PageTitle title="LISTA DE VIAGENS DISPONÍVEIS" />
+                    </ListTripsContainer1>
                     {tripsList.map((trip) => {
                         return (
                             <CardMainContainer key={trip.id}>

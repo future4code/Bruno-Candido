@@ -10,16 +10,17 @@ import useForm from '../hooks/useForm';
 import axios from 'axios';
 
 const CreateTripPageMainContainer = styled.div`
-    width: 60vw;
-    height: 100vh;
+    width: 100%;
+    height: 110%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
 `;
 
 const CreateTripContainer = styled.div`
-    width: 40%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +89,7 @@ function CreateTripPage() {
             description: form.description,
             durationInDays: Number(form.durationInDays),
         };
-        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/bruno-luan-banu/trips", body,
+        axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/bruno-luan-banu/trips", body,/**aqui tbm */
             {
                 headers: {
                     auth: authenticator

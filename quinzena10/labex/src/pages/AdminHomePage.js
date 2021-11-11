@@ -11,11 +11,13 @@ import axios from 'axios';
 import trashCanIcon from '../img/trashcanicon.png';
 
 const AdminHomePageMainContainer = styled.div`
-    width: 60vw;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
 `;
 
 const AdminHomeContainer = styled.div`
@@ -37,7 +39,7 @@ const CardMainContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: gray;
+    background: #00daff;
     margin: 8px;
     padding: 8px 16px;
     width: 80%;

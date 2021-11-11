@@ -11,12 +11,13 @@ import axios from 'axios';
 import { countries } from "../constants/countries";
 
 const ApplicationFormPageMainContainer = styled.div`
-    width: 60vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
 `;
 
 const ApplicationFormContainer = styled.div`

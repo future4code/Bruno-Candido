@@ -10,12 +10,13 @@ import { useHistory, useParams } from 'react-router-dom';
 import useProtectedPage from '../hooks/useProtectedPage';
 
 const TripDetailsPageMainContainer = styled.div`
-    width: 60vw;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg);
 `;
 
 const TripDetailsContainer = styled.div`
@@ -24,6 +25,7 @@ const TripDetailsContainer = styled.div`
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+    color: #ff3f41;
 `;
 
 const ButtonContainer = styled.div`
@@ -46,10 +48,15 @@ const PageSubTitle = styled.div`
     display: flex;
     justify-content: center;
     margin: 25px;
+    color: #055aec;
 `;
 
+const PageAprovador = styled.div`
+        color: #ff3f41; 
+`
+
 const TripApplicantsContainer = styled.div`
-    width: 60%;
+    width: 40%;
 `;
 
 const ApplicantCard = styled.div`
@@ -58,6 +65,7 @@ const ApplicantCard = styled.div`
     display: flex;
     flex-direction: column;
     margin: 6px 0;
+    color:#ff3f41;
 `;
 
 const DetailButtonContainer = styled.div`
@@ -73,7 +81,7 @@ const MiniButton = styled.button`
     align-items: center;
     width: 120px;
     height: 35px;
-    background-color: grey;
+    background-color: #50b5df;
     color: whitesmoke;
     border: 1px solid black;
     font-size: 15px;
@@ -83,7 +91,15 @@ const MiniButton = styled.button`
         background-color: whitesmoke;
         color: black;
     };
-`;
+`
+const ListTripsContainer1 = styled.div`
+   color: #055aec;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+
+`
+
 
 function TripDetailsPage() {
 
@@ -168,7 +184,9 @@ function TripDetailsPage() {
                         buttonName="VOLTAR"
                     />
                 </ButtonContainer>
-                <PageTitle title={tripDetail.name} />
+                <ListTripsContainer1>
+                    <PageTitle title={tripDetail.name} />
+                </ListTripsContainer1>
                 <TripDetailsContainer>
                     <TripDetail>Nome: {tripDetail.name}</TripDetail>
                     <TripDetail>Descrição: {tripDetail.description}</TripDetail>
@@ -196,18 +214,18 @@ function TripDetailsPage() {
                         })}
                 </TripApplicantsContainer>
                 <PageSubTitle>Candidatos aprovados</PageSubTitle>
-                <div>
+                <PageAprovador>
                     {tripDetail.approved &&
                         tripDetail.approved.map((applier) => {
                             return (
-                                <div key={applier.id}>
+                                <PageAprovador key={applier.id}>
                                     <ul>
                                         <li>{applier.name}, {applier.age} anos, {applier.country}</li>
                                     </ul>
-                                </div>
+                                </PageAprovador>
                             );
                         })}
-                </div>
+                </PageAprovador>
                 <Footer />
             </TripDetailsPageMainContainer>
         )
@@ -218,6 +236,7 @@ function TripDetailsPage() {
                 <Header />
                 <Loading />
                 <Footer />
+
             </TripDetailsPageMainContainer>)
     };
 }

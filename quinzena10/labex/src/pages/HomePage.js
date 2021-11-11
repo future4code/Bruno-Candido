@@ -6,13 +6,13 @@ import Button from '../components/Button';
 import { useHistory } from 'react-router-dom';
 
 const HomePageMainContainer = styled.div`
-    width: 99vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    background-image:url(https://static3.tcdn.com.br/img/img_prod/580806/outlet_1_rolo_de_papel_de_parede_espaco_sideral_0_60_x_2_50_metros_11189_1_20210623183849.jpg)
+    margin: 0 auto ;
+    background-image:url(https://1.bp.blogspot.com/-Syw0aNZ16tc/XcMdN9_5POI/AAAAAAAAecw/ZlopBKd1iswdN-lIXwdgXAQ7SFcIjBXMACLcBGAsYHQ/s2560/colorful-planets-chill-scifi-pink-4k-zs-2560x1440.jpg)
 `;
 
 const ButtonContainer = styled.div`

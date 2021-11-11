@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import headerIcon from '../img/headericon.png'
-import background from '../img/background-space.jpg'
+import headerIcon from '../img/headericon1.png'
+
 
 const HeaderMainContainer = styled.div`
     width: 100%;
     height: 80px;
-    background-color: grey;
+    background-color: #50b5df;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -43,7 +43,7 @@ const MiniButton = styled.button`
     align-items: center;
     width: 120px;
     height: 35px;
-    background-color: DarkGray;
+    background-color: #00daff;
     color: whitesmoke;
     border: 1px solid black;
     font-size: 15px;
@@ -103,7 +103,7 @@ function Header() {
                         src={headerIcon}
                         alt="Header Icon"
                     />
-                    <p>LABEX</p>
+                    <p>LABEX a sua viajem começa aqui</p>
                 </IconContainer>
                 <LogoutContainer>
                     <MiniButton onClick={doLogout}>LOGOUT</MiniButton>

@@ -7,6 +7,7 @@ const StyledPageTitle = styled.div`
     display: flex;
     justify-content: center;
     margin: 25px;
+    border-radius:15px;
 `;
 
 function PageTitle(props) {
